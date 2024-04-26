@@ -32,7 +32,8 @@ namespace MvcCoreInsights.Controllers
             metric.Sum = cantidad;
             this.telemetryClient.TrackMetric(metric);
 
-            //tambien podemos crear 
+            //TAMBIEN PODEMOS CREAR TRAZAS, QUE NO DEJAN DE SER 
+            //MENSAJES DE SEGUIMIENTO Y QUE CONTIENEN UN NIVEL
             string mensaje = "";
             SeverityLevel level;
             if (cantidad == 0)
